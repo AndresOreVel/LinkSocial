@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black-color: hsl(0,0%,7%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    --white-color: hsl(0, 0%, 100%);
+    --green-color: hsl(75, 94%, 57%);
+}
+
+body{
+    display: flex;
+    min-height: 100vsh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--black-color);
+    text-align: center;
+    font-family: 'Inter', 'sans-serif';
+}
+
+main{
+    background-color: var(--grey-800);
+    margin: 1.5em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    width: 89%;
+    min-width: 20rem;
+    max-width: 30rem;
+}
+
+.picture{
+    display: block;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 6rem;
+    width: 6rem;
+}
+
+.person_img{
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--white-color);
+}
+
+h3{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--green-color);
+    margin-bottom: 1.5rem;
+}
+
+p{
+    font-size: 0.9rem;
+    margin-bottom: 1.75rem;
+    color: var(--white-color);
+}
+
+.content_links{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.social-link{
+    color: var(--white-color);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--grey-700);
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.social-link:hover{
+    background-color: var(--green-color);
+    cursor: pointer;
+    color: var(--grey-700);
+}
+
+.attribution{
+    position: fixed;
+    bottom: 0;
+    color: var(--white-color);
+    letter-spacing: 0.05rem;
+}
